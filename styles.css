@@ -275,3 +275,15 @@ nav a:focus {
 .widget-image {
     order: -1;
 }
+#about-wid {
+    border: none;
+    text-align: center;
+}
+#contact-wid{
+    text-align: center;
+ 
+}
+
+#about-wid a:focus{
+    color: #1792d2;
+}
