@@ -53,3 +53,22 @@ count6El.addEventListener("click", function(){
    function renderOut(){
     like7.textContent = count7;
    }
+
+   let count8El = document.getElementById("count-8");
+   let like8 = document.getElementById("like-8")
+   let count8 = 1;
+   let saveNow = JSON.parse(localStorage.getItem("count8")) ;
+
+   if(saveNow){
+    count8 = saveNow;
+    renders()
+  }
+  count8El.addEventListener("click", function(){
+      count8++;
+      localStorage.setItem("count8", JSON.stringify(count8));
+      renders()
+ })
+
+   function renders(){
+    like8.textContent = count8;
+   }
