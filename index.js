@@ -1,3 +1,11 @@
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+
+})
+
 let countEl = document.getElementById("count");
 let likEl = document.getElementById("like")
 let count = 1;

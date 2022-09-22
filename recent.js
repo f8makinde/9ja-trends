@@ -1,4 +1,10 @@
-let count5El = document.getElementById("count-5");
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+})
+ 
+ let count5El = document.getElementById("count-5");
 let like5 = document.getElementById("like-5")
 let count5 = 1;
 let save1El = JSON.parse(localStorage.getItem("count5"));
